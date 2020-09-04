@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/BelleNg/charting-currency/issues"
   },
-  "homepage": "https://github.com/BelleNg/charting-currency#readme"
+  "homepage": "https://github.com/BelleNg/charting-currency#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
