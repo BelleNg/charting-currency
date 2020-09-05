@@ -1,9 +1,6 @@
 import React from "react";
-import Chart from "./Chart.jsx"
 
-
-
-class App extends React.Component {
+class Chart extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -12,10 +9,9 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        This is App
-        <Chart/>
+        This is Chart
       </div>
     )
   }
 }
-export default App;
+export default Chart;
