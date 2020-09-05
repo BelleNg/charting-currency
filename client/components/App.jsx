@@ -1,6 +1,7 @@
 
 import React from "react";
-import Chart from "./Chart.jsx"
+import Chart from "./Chart.jsx";
+import Graph from "./Graph.jsx";
 
 
 
@@ -15,6 +16,7 @@ class App extends React.Component {
       <div>
         This is App
         <Chart/>
+        <Graph/>
       </div>
     )
   }
