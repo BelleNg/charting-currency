@@ -17,11 +17,13 @@ app.use(express.static(__dirname + "/public"));
 //   res.send({ working: true });
 // });
 
-app.get("/api/coindesk", (req, res) => {
-    // will need to change start and end in url to get dynamic dates.
+app.get("/api/coindesk/", (req, res) => {
+    // get queryparams start and end for api or set to default dates
+    let start = req.query.start || '2020-05-07';
+    let end = req.query.end || '2020-07-12';
   axios
     .get(
-      `https://api.coindesk.com/v1/bpi/historical/close.json?start=2013-09-01&end=2013-09-05`
+      `https://api.coindesk.com/v1/bpi/historical/close.json?start=${start}&end=${end}`
     )
     .then(function (response) {
     //response.data is object containing info from api

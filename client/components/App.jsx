@@ -1,7 +1,7 @@
 
 import React from "react";
-import Chart from "./Chart.jsx";
-import Graph from "./Graph.jsx";
+import DateView from "./DateView.jsx";
+
 
 
 
@@ -15,8 +15,7 @@ class App extends React.Component {
     return (
       <div>
         This is App
-        <Chart/>
-        <Graph/>
+        <DateView/>
       </div>
     )
   }
